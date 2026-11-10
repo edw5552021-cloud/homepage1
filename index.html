@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndPlus Hometech | HVAC, G2 Gas & 309A Electrical | Toronto</title>
+    <meta name="description" content="Toronto licensed HVAC, G2 gas fitter, 309A electrician. Heat pump, furnace, AC, gas line, wiring, maintenance & repair, commercial refrigeration service.">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+        :root{--dark:#1a222c;--gold:#c48b48;--light:#f5f7fa;--gray:#666;}
+        body{background:var(--light);color:#333;line-height:1.6;}
+        header{background:var(--dark);color:white;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:99;}
+        .logo{font-size:1.5rem;font-weight:bold;color:var(--gold);}
+        .lang-switch button{background:transparent;border:1px solid var(--gold);color:white;padding:6px 12px;margin:0 4px;border-radius:4px;cursor:pointer;}
+        .lang-switch button.active{background:var(--gold);color:#111;}
+        .hero{background:linear-gradient(rgba(26,34,44,0.85),rgba(26,34,44,0.85)),url('https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;color:white;padding:6rem 5%;text-align:center;}
+        .hero h1{font-size:2.4rem;margin-bottom:1rem;color:var(--gold);}
+        .hero p{font-size:1.15rem;max-width:800px;margin:0 auto 2rem;}
+        .badge-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem;}
+        .badge{background:rgba(196,139,72,0.25);border:1px solid var(--gold);padding:8px 16px;border-radius:99px;font-weight:500;}
+        .btn{display:inline-block;background:var(--gold);color:#111;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:bold;margin:0 8px;transition:0.2s;}
+        .btn:hover{opacity:0.9;}
+        .btn-outline{background:transparent;border:2px solid var(--gold);color:white;}
+        section{padding:4rem 5%;}
+        .section-title{text-align:center;font-size:2rem;color:var(--dark);margin-bottom:3rem;}
+        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;}
+        .service-card{background:white;padding:2rem;border-radius:10px;box-shadow:0 4px 12px #00000014;}
+        .service-card h3{color:var(--gold);margin-bottom:1rem;font-size:1.3rem;}
+        .process{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-top:2rem;}
+        .step{text-align:center;}
+        .step-num{width:48px;height:48px;background:var(--gold);color:#111;border-radius:50%;display:grid;place-items:center;font-weight:bold;margin:0 auto 1rem;font-size:1.2rem;}
+        .contact-box{background:var(--dark);color:white;padding:3rem;border-radius:12px;max-width:900px;margin:0 auto;}
+        .contact-item{margin:1rem 0;font-size:1.1rem;}
+        .contact-item a{color:var(--gold);text-decoration:none;}
+        footer{background:#111;color:#aaa;text-align:center;padding:2rem 5%;font-size:0.9rem;}
+        .cn,.en{display:none;}
+        .active-lang{display:block;}
+        @media(max-width:700px){
+            .hero h1{font-size:1.8rem;}
+            .hero{padding:4rem 5%;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">AndPlus Hometech</div>
+        <div class="lang-switch">
+            <button class="active" onclick="switchLang('en')">EN</button>
+            <button onclick="switchLang('cn')">中文</button>
+        </div>
+    </header>
+
+    <!-- 英文 -->
+    <div class="en active-lang">
+        <section class="hero">
+            <h1>Licensed HVAC, G2 Gas & 309A Electrical Service</h1>
+            <p>Professional heating, cooling, heat pump, gas fitting, electrical wiring & commercial refrigeration service for Toronto & GTA residential and commercial properties.</p>
+            <div class="badge-row">
+                <span class="badge">HVAC313A</span>
+                <span class="badge">309A Electrician</span>
+                <span class="badge">G2 Gas Fitter</span>
+                <span class="badge">ESA Certified MASTER ELECTRICIAN</span>
+            </div>
+            <div>
+                <a href="#contact" class="btn">Contact Us</a>
+                <a href="#service" class="btn btn-outline">Our Services</a>
+            </div>
+        </section>
+
+        <section id="service">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>HVAC & Heat Pump</h3>
+                    <p>Furnace, Air Conditioner, Ductless Mini Split, Heat Pump installation, maintenance, troubleshooting, commissioning. Residential & light commercial.</p>
+                </div>
+                <div class="service-card">
+                    <h3>G2 Gas Fitting</h3>
+                    <p>Gas line inspection, new gas run, gas appliance hook-up, gas leak test, TSSA compliant service.</p>
+                </div>
+                <div class="service-card">
+                    <h3>309A Electrical</h3>
+                    <p>Branch wiring, panel upgrade, receptacle, lighting, control wiring for HVAC, electrical inspection prep, ESA permit work.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Commercial Refrigeration</h3>
+                    <p>Display cooler, rack system, evaporator, EPR valve, superheat / subcool adjustment, leak repair, R448A / R22 service.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Preventive Maintenance</h3>
+                    <p>Seasonal tune-up for furnace, AC, heat pump, gas appliance, reduce breakdown risk and extend service life.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Emergency Repair</h3>
+                    <p>Fast response for no heat, no cooling, gas alarm, electrical fault in GTA area.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">How We Work</h2>
+            <div class="process">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Quote</h3>
+                    <p>Discuss your project and provide clear upfront pricing</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Permit</h3>
+                    <p>Handle ESA / TSSA permits as required</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Work</h3>
+                    <p>Professional installation & repair following code</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <h3>Inspect</h3>
+                    <p>Test, commission and clean up work site</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-box">
+                <h2 class="section-title" style="color:var(--gold);">Contact</h2>
+                <div class="contact-item">📞 Phone: <a href="tel:4373602238">437-360-2238</a></div>
+                <div class="contact-item">💬 WeChat: WZX5552016</div>
+                <div class="contact-item">📧 Email: <a href="mailto:ricy5552002@yahoo.com">ricy5552002@yahoo.com</a></div>
+                <p style="margin-top:1.5rem;">Service Area: Toronto & Greater Toronto Area (GTA)</p>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 AndPlus Hometech | Licensed 309A Electrician & G2 Gas Fitter | All services comply with Ontario code
+        </footer>
+    </div>
+
+    <!-- 中文 -->
+    <div class="cn">
+        <section class="hero">
+            <h1>安通家用科技 AndPlus Hometech</h1>
+            <p>多伦多持证暖通、G2燃气、309A电工，住宅和小型商业：热泵、冷暖炉、空调、燃气管道、电气布线、商用制冷维修调试</p>
+            <div class="badge-row">
+                <span class="badge">HVAC暖通313A</span>
+                <span class="badge">309A电工</span>
+                <span class="badge">G2燃气资质</span>
+                <span class="badge">ESA认证</span>
+
+            </div>
+            <div>
+                <a href="#contact-cn" class="btn">联系我们</a>
+                <a href="#service-cn" class="btn btn-outline">服务项目</a>
+            </div>
+        </section>
+
+        <section id="service-cn">
+            <h2 class="section-title">服务项目</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>暖通 & </h3>
+                    <p>暖炉、中央空调、分体迷你风管机、热泵安装维保、故障排查、调试，住宅及小型商业项目</p>
+                </div>
+                <div class="service-card">
+                    <h3>G2燃气施工</h3>
+                    <p>燃气管道巡检、新管铺设、燃气设备接驳、燃气检漏，符合TSSA安省规范</p>
+                </div>
+                <div class="service-card">
+                    <h3>309A电气服务</h3>
+                    <p>分支线路、电箱升级、插座照明、暖通控制线路、ESA报证、验收准备</p>
+                </div>
+                <div class="service-card">
+                    <h3>商用制冷</h3>
+                    <p>展示柜、并联机架、蒸发器、EPR阀、过冷过热调试、漏点维修，R448A/R22系统</p>
+                </div>
+                <div class="service-card">
+                    <h3>年度预防性保养</h3>
+                    <p>暖炉、空调、热泵、燃气设备换季保养，降低故障概率、延长设备寿命</p>
+                </div>
+                <div class="service-card">
+                    <h3>紧急抢修</h3>
+                    <p>无暖气、不制冷、燃气报警、电气故障，GTA区域快速上门</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">服务流程</h2>
+            <div class="process">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>报价</h3>
+                    <p>沟通需求，给出清晰透明报价</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>报证</h3>
+                    <p>按需办理ESA / TSSA许可</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>施工</h3>
+                    <p>按规范专业安装维修</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <h3>验收</h3>
+                    <p>测试调试，清理现场</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-cn">
+            <div class="contact-box">
+                <h2 class="section-title" style="color:var(--gold);">联系我们</h2>
+                <div class="contact-item">📞 电话：<a href="tel:4373602238">437-360-2238</a></div>
+                <div class="contact-item">💬 微信：WZX5552016</div>
+                <div class="contact-item">📧 邮箱：<a href="mailto:ricy5552002@yahoo.com">ricy5552002@yahoo.com</a></div>
+                <p style="margin-top:1.5rem;">服务范围：多伦多及大多伦多GTA区域</p>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 AndPlus Hometech | 持证309A电工 & G2燃气技工 | 全部服务符合安省电气、燃气规范
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang){
+            document.querySelectorAll('.en,.cn').forEach(el=>el.classList.remove('active-lang'))
+            document.querySelector('.'+lang).classList.add('active-lang')
+            document.querySelectorAll('.lang-switch button').forEach(btn=>btn.classList.remove('active'))
+            event.target.classList.add('active')
+        }
+    </script>
+</body>
+</html>
